@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="Thank you for contacting us" recipientType="Lead" relatedToType="Lead">
+<messaging:plainTextEmailBody >
+Thank you, our team will contact you shortly.
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

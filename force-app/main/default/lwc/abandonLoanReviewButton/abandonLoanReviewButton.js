@@ -19,7 +19,7 @@ export default class AbandonLoanReviewButton extends LightningElement {
     handleConfirmDialogYes() {
         this.caseId = this.recordId;
 
-        this.template.querySelector('lightning-flow').startFlow('AlertMessageofLoanReview', this.flowInputVariables);
+        this.template.querySelector('lightning-flow').startFlow('abandon_loan_review ', this.flowInputVariables);
         this.showConfirmDialog = false;
     }
 
@@ -27,7 +27,7 @@ export default class AbandonLoanReviewButton extends LightningElement {
 
         return [
             {
-                name: "var_CaseId",
+                name: "varCaseId",
                 type: "String",
                 value: this.recordId,
             },
